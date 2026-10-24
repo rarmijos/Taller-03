@@ -1,0 +1,28 @@
+<select [(ngModel)]="plataforma" (ngModelChange)="cambiarPlataforma($event)">
+    <option value="">Selecciona una plataforma</option>
+    <option value="PC">PC</option>
+    <option value="PS5">PS5</option>
+    <option value="Xbox">Xbox</option>
+</select>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Genero</th>
+            <th>Plataforma</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @for ( video of videoArreglo; track $index){
+        @if (plataforma == video.plataforma) {
+        <tr>
+            <td>{{video.nombre}}</td>
+            <td>{{video.genero}}</td>
+            <td>{{video.plataforma}}</td>
+        </tr>
+        }
+        }
+    </tbody>
+</table>

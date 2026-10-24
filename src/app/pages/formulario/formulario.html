@@ -1,0 +1,11 @@
+<form (ngSubmit)="guardar(formulario)" #formulario="ngForm">
+    <input type="text" name="nombre" [(ngModel)]="nombre" placeholder="nombre">
+    <input type="text" name="genero" [(ngModel)]="genero" placeholder="genero">
+    <input type="text" name="plataforma" [(ngModel)]="plataforma" placeholder="plataforma">
+
+    <button type="submit">Guardar</button>
+</form>
+
+<br>
+
+<button (click)="cerrar()">Cerrar</button>

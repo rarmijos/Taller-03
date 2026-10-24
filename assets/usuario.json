@@ -1,0 +1,26 @@
+{
+  "usuarios": [
+    {
+      "nombre": "Roy Hernan",
+      "email": "rarmijos@yopmail.com",
+      "password": "123456",
+      "rol": "usuario",
+      "id": "ye4DfsQdPkE"
+    },
+    {
+      "nombre": "Bryan Patricio",
+      "email": "bguanoluisa@yopmail.com",
+      "password": "123456",
+      "rol": "admin",
+      "id": "g76vdYmLa6I"
+    },
+    {
+      "nombre": "carla",
+      "email": "carla@yop.com",
+      "password": "123456",
+      "rol": "usuario",
+      "id": "CkZx93hak3w"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
